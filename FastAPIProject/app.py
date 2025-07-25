@@ -46,7 +46,7 @@ current_dir = os.path.dirname(os.path.realpath(__file__))
 static_path = os.path.join(current_dir, "static")
 
 # Serve static files
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/static", StaticFiles(directory="FastAPIProject/static"), name="static")
 
 
 @app.get("/", response_class=HTMLResponse)
