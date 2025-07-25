@@ -42,6 +42,9 @@ messages_storage: List[Message] = []
 # Templates
 templates = Jinja2Templates(directory="templates")
 
+current_dir = os.path.dirname(os.path.realpath(__file__))
+static_path = os.path.join(current_dir, "static")
+
 # Serve static files
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
