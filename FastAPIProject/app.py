@@ -40,7 +40,7 @@ class ChatResponse(BaseModel):
 messages_storage: List[Message] = []
 
 # Templates
-templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(directory="FastAPIProjects/templates")
 
 current_dir = os.path.dirname(os.path.realpath(__file__))
 static_path = os.path.join(current_dir, "static")
